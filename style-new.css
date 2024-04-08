@@ -1,0 +1,75 @@
+html {
+    box-sizing: border-box; }
+
+    *,*::after, *::before {
+        box-sizing: inherit;
+    }
+
+    body {
+        font-family: 'Montserrat', sans-serif;
+    } 
+
+    h1 {
+        font-size: 18px;
+    }
+
+    p {
+        font-size: 12px;
+    }
+    
+    .text-black {
+        color: rgb(42, 35, 103);
+    }
+
+    .brand-color {
+        color: rgb(107, 90, 249);
+    }
+
+    .navigation {
+        display:flex;
+        justify-content: space-between;
+        margin-left: 10px;
+        margin-right: 10px;
+        align-items: center;
+        margin-top: 12px;
+
+    }
+    
+    .button {
+        display: block;
+        background-color: rgb(107, 90, 249);
+        width: 275px;
+        height: 60px;
+        color: aliceblue;
+        border: 0px;
+        border-radius: 5px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 50px;
+
+    }
+
+    .phone {
+        width: 52px;
+        height: 32px;
+    }
+
+    .logo {
+        width: 113.21px;
+        height: 35px;
+    }
+
+    .menu {
+        width: 41px;
+        height: 20px;
+    }
+
+    .fon {
+        position: absolute;
+        top: 50px;
+        left: -30px;
+    }
+
+    .text-up {
+        padding-top: 250px;
+    }
