@@ -1,0 +1,101 @@
+html {
+    box-sizing: border-box; }
+
+    *,*::after, *::before {
+        box-sizing: inherit;
+    }
+
+    body {
+        font-family: 'Montserrat', sans-serif;
+    }
+
+.navigation {
+        display:flex;
+        justify-content: space-between;
+        padding-left: 10px;
+        padding-right: 10px;
+        align-items: center;
+        list-style-type: none;
+        margin: 0 auto;
+    }
+        .navigation__logo { 
+            width: 113.21px;
+            height: 35px;
+
+		}
+        .navigation__menu {
+            width: 41px;
+            height: 20px;
+		}
+        .navigation__btn {
+            background-image: url(Картинки/Vector.svg);
+            background-repeat: no-repeat;
+            background-position: center;
+            width: 52px;
+            height: 32px;
+            background-color: rgb(107, 90, 249);
+            border-radius: 5px;
+            border: 0px;
+		}
+        @media (min-width: 768px) { 
+            .navigation__logo {
+                width: 177.61px;
+                height: 55px;
+                
+            }
+            .navigation__btn {
+                width: 62px;
+                height: 38.75px;
+            }
+            .navigation__menu {
+                width: 41px;
+                height: 20px;
+            }
+        }
+
+.main {
+    margin: 0 auto;
+ }
+
+    .main__title {
+            font-size: 18px;
+            color: rgb(42, 35, 103);
+            padding-left: 10px;
+		}
+
+		.main__picture {
+          overflow: hidden;
+          margin: 0 auto;
+          object-fit: cover;
+          position: relative;
+          top: -60px;
+          left: -30px;
+		}
+
+		.main__text {
+            font-size: 12px;
+            color: rgb(42, 35, 103)
+		}
+
+.oferta { }
+
+    .oferta__btn {
+        display: block;
+        background-color: rgb(107, 90, 249);
+        width: 275px;
+        height: 60px;
+        color: aliceblue;
+        border: 0px;
+        border-radius: 5px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 50px;
+		}
+
+		.oferta__text {
+        font-size: 12px;
+        color:rgb(42, 35, 103);
+        text-align: center;
+		}
+
+
