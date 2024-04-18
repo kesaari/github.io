@@ -7,18 +7,12 @@ html {
 
     body {
         font-family: 'Montserrat', sans-serif;
-        margin: 0;
+        margin: 0 auto;
         color:  rgb(42, 35, 103);
-    }
-    @media (min-width: 1440px) {
-        body {
-            max-width: 1160px;
-            margin: 0 auto;
-        }
     }
 
     ul {
-        margin: 0;
+
     }
 
 .navigation {
@@ -26,7 +20,7 @@ html {
         justify-content: space-between;
         align-items: center;
         list-style-type: none;
-        padding: 13px 10px;
+
     }
         .navigation__logo { 
             width: 113.21px;
@@ -149,7 +143,6 @@ html {
 
  .main__container{
       position: relative;
-    padding-bottom: 274px;
  }
 
     .main__title {
@@ -160,7 +153,6 @@ html {
 
 		.main__picture {
           overflow: hidden;
-          margin: 0 auto;
           object-fit: cover;
           position: absolute;
           top: -10px;
@@ -181,7 +173,7 @@ html {
                 
             }
             .main__container {
-                padding-bottom: 21px;
+
             }
             .main__text {
                 width: 356px;
@@ -201,7 +193,7 @@ html {
                 top: -70px;
             }
             .main__container {
-                padding-bottom: 21px;
+
             }
             .main__text {
                 width: 619px;
@@ -215,7 +207,6 @@ html {
         }
 
 .oferta { 
-    padding-left: 10px;
 }
 
     .oferta__btn {
@@ -226,9 +217,6 @@ html {
         color: aliceblue;
         border: 0px;
         border-radius: 5px;
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: 50px;
 		}
 
 		.oferta__text {
@@ -242,7 +230,7 @@ html {
             width: 287px;
         }
         .oferta__btn {
-            margin: 54px 0 0 2px;
+
 
         }
     }
