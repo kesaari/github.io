@@ -281,6 +281,9 @@ html {
         background-color: rgb(152, 141, 249);
         border: 3px solid rgb(107, 90, 249);
     }
+    .navigation__link:hover, .submenu__link:hover {
+        color:  rgb(107, 90, 249);
+    }
 
 
 
