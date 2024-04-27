@@ -21,7 +21,7 @@ html {
         justify-content: space-between;
         align-items: center;
         list-style-type: none;
-        width: 340px;
+        width: 100%;
         margin: 0;
         padding: 15px 10px;
         position: relative;
@@ -71,7 +71,7 @@ html {
         }
         @media (min-width: 768px) { 
             .navigation {
-                width: 633px;
+                width: 100%;
             }
             .navigation__logo {
                 width: 177.61px;
@@ -93,7 +93,7 @@ html {
         }
         @media (min-width: 1440px) {
             .navigation {
-                width: 1160px;
+                width: 100%;
             }
             .navigation__link__container {
                 display: flex;
@@ -277,7 +277,10 @@ html {
     .important {
         color: rgb(107, 90, 249);
     }
-
+    button:hover {
+        background-color: rgb(152, 141, 249);
+        border: 3px solid rgb(107, 90, 249);
+    }
 
 
 
