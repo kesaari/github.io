@@ -166,7 +166,9 @@ html {
             }
         }
 
+    .main {
 
+    }
 
     .main__title {
             font-size: 18px;
@@ -177,7 +179,12 @@ html {
 		.main__picture {
           overflow: hidden;
           object-fit: cover;
+          max-width: 500px
 
+        }
+        .main__picture--image {
+            width: 100%;
+            height: 100%;
         }
 
 		.main__description {
@@ -188,7 +195,7 @@ html {
         @media (min-width: 768px) { 
             .main {
                 display: flex;
-                justify-content: space-between;
+                justify-content: flex-start;
             }
             .main__title {
                 font-size: 24px;
@@ -196,9 +203,14 @@ html {
             }
             .main__picture {
                 align-self: flex-start;
-                transform: scale(1.3);
+                max-width: 800px;
                 margin-top: 20px;
                 order: 2;
+                flex-basis: 60%;
+
+            }
+            .main__picture-image {
+
                 
             }
             .main__description {
@@ -211,6 +223,7 @@ html {
                 justify-content: space-between;
                 align-items: stretch;
                 gap: 100px;
+
             }
 
 
@@ -224,7 +237,7 @@ html {
                 font-size: 36px;
             }
             .main__picture {
-                transform: scale(2);
+                flex-basis: 50%;
 
             }
             .main__text {
