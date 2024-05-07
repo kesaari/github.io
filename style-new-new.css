@@ -100,7 +100,8 @@ html {
         }
         @media (min-width: 1440px) {
             .navigation {
-                width: 100%;
+                max-width: 1300px;
+                margin: 0 auto;
             }
             .navigation__link__container {
                 display: flex;
@@ -324,7 +325,7 @@ menu {
     position: absolute;
     top: 0;
     left: 0;
-    width: 100vh;
+    width: 100vw;
     height: 100vh;
     background-color: rgba(163, 161, 161, 0.85);
     z-index: 1;
