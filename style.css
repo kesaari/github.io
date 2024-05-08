@@ -340,16 +340,21 @@ menu {
     position: absolute;
     flex-direction: column;
     width: 100vw;
-    height: 730px;
+    height: 100vh;
     background-color: rgb(255, 255, 255);
     top: 0;
     left: 0;
     list-style: none;
     align-items: center;
     padding: 0;
-    gap: 28px;
+    justify-content: space-between;
     z-index: 1;
-    
+
+    }
+.submenu__link__cont {
+    display: flex;
+    flex-direction: column;
+    gap:28px;
 }
 
 .submenu__link {
@@ -370,14 +375,19 @@ menu {
     font-size: 14px;
     font-weight: 700;
 }
+.submenu__info__cont {
+    display: flex;
+    flex-direction: column;
+    margin: 10vh;
+}
 .submenu__info {
     font-weight: 700;
     color:rgb(107, 90, 249);
-    transform: translateY(200px)
 }
-.submenu__info:last-child {
-    transform: translateY(180px)
+.submenu__info:first-child {
+    margin-bottom: 30px;
 }
+
 @media (min-width: 768px) {
     .submenu {
        width: 50vw;
