@@ -96,7 +96,7 @@ html {
                 display: none;
             }
         }
-        @media (min-width: 1440px) {
+        @media (min-width: 1280px) {
             .navigation {
                 max-width: 1300px;
                 margin: 0 auto;
@@ -179,7 +179,7 @@ html {
 		.main__picture {
           overflow: hidden;
           object-fit: cover;
-          max-width: 500px
+          max-width: 550px
 
         }
         .main__picture--image {
@@ -228,7 +228,7 @@ html {
 
 
         }
-        @media (min-width: 1440px) { 
+        @media (min-width: 1280px) { 
             .main {
                 justify-content: flex-start;
                 gap: 50px;
@@ -294,7 +294,7 @@ html {
 
         }
     }
-    @media (min-width: 1440px) {
+    @media (min-width: 1280px) {
         .oferta{
             width: 472px;
         }
@@ -323,7 +323,7 @@ html {
 
 menu {
     position: relative;
-    display: none;
+    display: flex;
 
 }
 .overlay {
@@ -383,7 +383,7 @@ menu {
        width: 50vw;
     }
 }
-@media (min-width: 1440px) {
+@media (min-width: 1280px) {
     .submenu {
         display: none;
     }
