@@ -323,9 +323,10 @@ html {
 
 menu {
     position: relative;
-    display: flex;
+    display: none;
 
 }
+
 .overlay {
     position: absolute;
     top: 0;
@@ -378,7 +379,7 @@ menu {
 .submenu__info__cont {
     display: flex;
     flex-direction: column;
-    margin: 10vh;
+    margin: 15vh;
 }
 .submenu__info {
     font-weight: 700;
@@ -400,4 +401,65 @@ menu {
     .overlay {
         display: none;
     }
+}
+
+
+
+.close {
+    font-size: 50px;
+    position: absolute;
+    z-index:1;
+    transform: rotate(45deg) translateX(-30px);
+    color: rgb(42, 35, 103);
+    }
+    .close:hover {
+        color: rgb(107, 90, 249);
+        }
+
+ol { 
+    counter-reset: item;
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px 20px;
+}
+
+ol li:before { 
+    content: counter(item, decimal-leading-zero) " "; 
+    counter-increment: item;
+}
+
+ol li {
+   width: 340px;
+   height: 200px;
+   font-size: 64px;
+   font-weight: 700;
+   color: rgb(255, 255, 255);
+   text-shadow: 0 4px 8px rgba(0, 0, 0, 0.25); 
+   box-shadow: 0 0 30px rgba(0, 0, 0, 0.15);
+   padding-left: 15px;
+   border-radius: 10px;
+}
+.profit__title {
+   font-size: 14px;
+   color: rgb(42, 35, 103);
+   text-shadow:none;
+   position: relative;
+
+}
+.profit__description {
+   font-weight: 400;
+   font-size: 12px;
+   color: rgb(42, 35, 103);
+   text-shadow:none;
+
+}
+
+.profit__title::after {
+    display: block;
+    content: "";
+    color: rgb(227, 117, 117);
+    height: 10px;
+    width: 175px;
+    position: absolute;
 }
