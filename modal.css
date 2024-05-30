@@ -1,0 +1,44 @@
+
+.modal {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
+.modal__label {
+    font-size: 16px;
+    color: rgb(126, 126, 126);
+
+}
+
+.modal__title {
+    font-size: 18px;
+    color: rgb(42, 35, 103);
+    font-weight: 700;
+    text-align: center;
+}
+
+.modal__description {
+    font-size: 10px;
+    color: rgb(152, 149, 180);
+}
+.modal__send {
+    color:white;
+    background-color: rgb(107, 90, 249);
+    font-size: 12px;
+    font-weight: 800;
+    border: 0;
+    border-radius: 5px;
+    height: 60px;
+    width: 90%;
+}
+
+[value] {
+    color: rgb(152, 149, 180);
+    font-size: 12px;
+}
+input {
+    border: 0;
+    border-bottom: 1px solid rgb(152, 149, 180);
+}

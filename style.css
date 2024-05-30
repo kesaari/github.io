@@ -334,7 +334,7 @@ menu {
     width: 100vw;
     height: 100vh;
     background-color: rgba(163, 161, 161, 0.85);
-    z-index: 1;
+    z-index: 2;
 }
 .submenu {
     display: flex;
@@ -349,7 +349,7 @@ menu {
     align-items: center;
     padding: 0;
     justify-content: space-between;
-    z-index: 1;
+    z-index: 2;
 
     }
 .submenu__link__cont {
@@ -410,7 +410,7 @@ menu {
 .close {
     font-size: 50px;
     position: absolute;
-    z-index:1;
+    z-index:3;
     transform: rotate(45deg) translateX(-30px);
     color: rgb(42, 35, 103);
     }
@@ -418,35 +418,13 @@ menu {
         color: rgb(107, 90, 249);
         }
 
-ol { 
-    counter-reset: item;
-    list-style-type: none;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 40px 20px;
-}
 
-ol li:before { 
-    content: counter(item, decimal-leading-zero) " "; 
-    counter-increment: item;
-}
-
-ol li {
-   width: 340px;
-   height: 200px;
-   font-size: 64px;
-   font-weight: 700;
-   color: rgb(255, 255, 255);
-   text-shadow: 0 4px 8px rgba(0, 0, 0, 0.25); 
-   box-shadow: 0 0 30px rgba(0, 0, 0, 0.15);
-   padding-left: 15px;
-   border-radius: 10px;
-}
 .profit__title {
    font-size: 14px;
    color: rgb(42, 35, 103);
    text-shadow:none;
    position: relative;
+   font-weight: 700;
 
 }
 .profit__description {
@@ -461,7 +439,7 @@ ol li {
     display: block;
     content: "";
     background-color: rgb(227, 117, 117);
-     height: 2px;
+    height: 2px;
     width: 175px;
     position: absolute;
 }
@@ -479,49 +457,19 @@ ol li {
     display: none;
 }
 
-.slider-container {
-    position: relative;
-    width: 600px;
-    height: 400px;
-    margin: 0 auto;
-    overflow: hidden;
-  }
-  
-  .slider {
-    display: flex;
-    transition: transform 0.5s ease-in-out;
-  }
-  .prev-button,
-.next-button {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 50px;
-  height: 50px;
-  background-color: transparent;
-  border: none;
-  font-size: 24px;
-  color: pink;
-}
-
-.prev-button {
-  left: 10px;
-}
-
-.next-button {
-  right: 10px;
-}
-.profit__slide {
-    width: 340px;
-    height: 200px;
-    color: rgb(255, 255, 255);
-    box-shadow: 0 0 30px rgba(0, 0, 0, 0.15);
-   border-radius: 10px;
-}
 .profit__point {
     font-size: 64px;
    font-weight: 700;
    color: rgb(255, 255, 255);
    text-shadow: 0 4px 8px rgba(0, 0, 0, 0.25);
-   margin: 20px 0 0 15px;
+   margin: 20px 0 0 0;
+}
+
+.swiper {
+    width: 80vw;
+  }
+
+.swiper-slide {
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.15);
+    width: 80vw;
 }
