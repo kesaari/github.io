@@ -42,8 +42,12 @@ document.addEventListener('keydown', function (evt) {
     });
 
     let windowWidth = documentElement.clientWidth
-    
+    let x = window.matchMedia("(max-width: 768px)")
  
       if (windowWidth <= 768) {
         Swiper ()
       }
+
+    window.addEventListener ('resize', function() {
+      if (window.matchMedia("(max-width: 768px)")) 
+    })
