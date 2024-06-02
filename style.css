@@ -469,6 +469,7 @@ menu {
 .swiper {
     box-shadow: 0 0 30px rgba(0, 0, 0, 0.15);
     width: 90vw;
+    border-radius: 10px;
   }
 
 .swiper-slide {
@@ -486,4 +487,14 @@ transform: translateY(30px) !important;
 }
 .swiper-wrapper {
     
+}
+.profit__btn {
+    display: block;
+        background-color: rgb(107, 90, 249);
+        width: 275px;
+        height: 60px;
+        color: aliceblue;
+        border: 0px;
+        border-radius: 5px;
+        margin: 0 auto;
 }
