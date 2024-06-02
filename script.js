@@ -49,5 +49,7 @@ document.addEventListener('keydown', function (evt) {
       }
 
     window.addEventListener ('resize', function() {
-      if (window.matchMedia("(max-width: 768px)")) 
+      if (window.matchMedia("(max-width: 768px)").matches) {
+        console.log('aboba')
+      }
     })
