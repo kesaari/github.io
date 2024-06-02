@@ -40,3 +40,10 @@ document.addEventListener('keydown', function (evt) {
         clickable: true,
       }
     });
+
+    let windowWidth = documentElement.clientWidth
+    
+ 
+      if (windowWidth <= 768) {
+        Swiper ()
+      }
