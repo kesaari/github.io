@@ -432,6 +432,7 @@ menu {
    font-size: 12px;
    color: rgb(42, 35, 103);
    text-shadow:none;
+   width: 80vw;
 
 }
 
@@ -466,10 +467,23 @@ menu {
 }
 
 .swiper {
-    width: 80vw;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.15);
+    width: 90vw;
   }
 
 .swiper-slide {
-    box-shadow: 0 0 30px rgba(0, 0, 0, 0.15);
-    width: 80vw;
+    padding-left: 15px;
+    }
+.swiper-pagination {
+transform: translateY(30px) !important;
+
+} 
+.swiper-pagination-bullet {
+    background-color: rgb(221, 221, 221) !important;
+}
+.swiper-pagination-bullet-active {
+    background-color: rgb(181, 182, 188) !important;
+}
+.swiper-wrapper {
+    
 }
