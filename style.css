@@ -1,5 +1,6 @@
 html {
-    box-sizing: border-box; }
+    box-sizing: border-box;
+    height: 100%; }
 
     *,*::after, *::before {
         box-sizing: inherit;
@@ -26,7 +27,8 @@ html {
         margin: 0;
         padding: 15px 10px;
         position: relative;
-
+        background-color: white;
+        z-index: 3;
     }
         .navigation__logo { 
             width: 113.21px;
@@ -324,17 +326,19 @@ html {
 menu {
     position: relative;
     display: none;
+    height: 100%;
 
 }
 
 .overlay {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
-    width: 100vw;
+    width: 100%;
     height: 100%;
     background-color: rgba(163, 161, 161, 0.85);
     z-index: 2;
+
 }
 .submenu {
     display: flex;
@@ -343,7 +347,7 @@ menu {
     width: 100vw;
     height: 100vh;
     background-color: rgb(255, 255, 255);
-    top: 0;
+    top: -18px;
     left: 0;
     list-style: none;
     align-items: center;
@@ -360,7 +364,7 @@ menu {
 
 .submenu__link {
     text-align: center;
-    width: 160px;
+    width: 170px;
 }
 
 .submenu__link:first-child {
@@ -394,6 +398,9 @@ menu {
 @media (min-width: 768px) {
     .submenu {
        width: 50vw;
+    }
+    .overlay {
+        background-image: linear-gradient(to right, white 51%, rgba(163, 161, 161, 0.85) 49%);
     }
 }
 @media (min-width: 1280px) {
@@ -467,16 +474,20 @@ menu {
 }
 
 .swiper {
-    width: 90vw;
+    width: 100vw;
     border-radius: 10px;
     display:flex !important;
     flex-direction: column;
     gap: 30px;
+
   }
 
 .swiper-slide-active {
-    padding-left: 15px;
+    padding: 15px;
     }
+.swiper-slide {
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.15);
+}
 .swiper-pagination {
     position: static !important;
 
@@ -488,7 +499,8 @@ menu {
     background-color: rgb(181, 182, 188) !important;
 }
 .swiper-wrapper {
-
+    padding: 30px;
+    width: 90vw;
 }
 .profit__btn {
     display: block;
