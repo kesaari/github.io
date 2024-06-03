@@ -332,7 +332,7 @@ menu {
     top: 0;
     left: 0;
     width: 100vw;
-    height: 100vh;
+    height: 100%;
     background-color: rgba(163, 161, 161, 0.85);
     z-index: 2;
 }
@@ -467,16 +467,18 @@ menu {
 }
 
 .swiper {
-    box-shadow: 0 0 30px rgba(0, 0, 0, 0.15);
     width: 90vw;
     border-radius: 10px;
+    display:flex !important;
+    flex-direction: column;
+    gap: 30px;
   }
 
-.swiper-slide {
+.swiper-slide-active {
     padding-left: 15px;
     }
 .swiper-pagination {
-transform: translateY(30px) !important;
+    position: static !important;
 
 } 
 .swiper-pagination-bullet {
@@ -486,7 +488,7 @@ transform: translateY(30px) !important;
     background-color: rgb(181, 182, 188) !important;
 }
 .swiper-wrapper {
-    
+
 }
 .profit__btn {
     display: block;
@@ -497,6 +499,7 @@ transform: translateY(30px) !important;
         border: 0px;
         border-radius: 5px;
         margin: 0 auto;
+        margin-top: 50px;
 }
 
 .use__ul li:first-child {
