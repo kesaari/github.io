@@ -5,12 +5,12 @@ html {
     *,*::after, *::before {
         box-sizing: inherit;
     }
-
     body {
         font-family: 'Montserrat', sans-serif;
         margin: 0;
         padding: 0;
         color:  rgb(42, 35, 103);
+        width: 100vw;
     }
 
     a {
@@ -472,36 +472,29 @@ menu {
    text-shadow: 0 4px 8px rgba(0, 0, 0, 0.25);
    margin: 20px 0 0 0;
 }
-
 .swiper {
-    width: 100vw;
-    border-radius: 10px;
-    display:flex !important;
-    flex-direction: column;
-    gap: 30px;
-
-  }
-
-.swiper-slide-active {
-    padding: 15px;
-    }
-.swiper-slide {
-    box-shadow: 0 0 30px rgba(0, 0, 0, 0.15);
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 10px;
 }
 .swiper-pagination {
     position: static !important;
-
-} 
+}
 .swiper-pagination-bullet {
     background-color: rgb(221, 221, 221) !important;
 }
 .swiper-pagination-bullet-active {
     background-color: rgb(181, 182, 188) !important;
 }
-.swiper-wrapper {
-    padding: 30px;
-    width: 90vw;
+
+.swiper-card {
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.15);
+    width: 80%;
+    margin: 25px auto;
+    padding: 15px;
+    border-radius: 10px;
 }
+
 .profit__btn {
     display: block;
         background-color: rgb(107, 90, 249);
