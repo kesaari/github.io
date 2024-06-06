@@ -39,8 +39,10 @@ document.addEventListener('keydown', function (evt) {
             el: '.swiper-pagination',
             clickable: true,
             slidesPerView: 'auto',
-          }
+          } 
         });
+       } else {
+        swiper.enable()
        }
     }
 
@@ -49,6 +51,15 @@ document.addEventListener('keydown', function (evt) {
         sliderStart()
       } else {
         swiper.disable();
-        swiper = null;
+        
       }
     })
+
+    let seeMore = document.querySelector('.see-more');
+    let sliderCard = document.querySelectorAll('.profit-card-item')
+
+    seeMore.addEventListener('click', function() {
+      if (sliderCard.style.display = "none") {
+        sliderCard.style.display = "block"
+      }
+  });

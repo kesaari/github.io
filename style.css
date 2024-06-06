@@ -412,8 +412,9 @@ menu {
     }
 }
 
-
-
+.profit__conteiner {
+    display: none;
+}
 .close {
     font-size: 50px;
     position: absolute;
@@ -439,8 +440,7 @@ menu {
    font-size: 12px;
    color: rgb(42, 35, 103);
    text-shadow:none;
-   width: 80vw;
-
+   display: inline-block;
 }
 
 .profit__title::after {
@@ -452,15 +452,6 @@ menu {
     position: absolute;
 }
 
-.see-more {
-    font-size: 50px;
-    color: rgb(107, 90, 249);
-    transform: rotate(90deg);
-    width: auto;
-    position: absolute;
-    left: 50%;
-    bottom: -20%;
-}
 .display--none {
     display: none;
 }
@@ -477,6 +468,7 @@ menu {
     flex-direction: column !important;
     gap: 10px;
 }
+
 .swiper-pagination {
     position: static !important;
 }
@@ -493,6 +485,59 @@ menu {
     margin: 25px auto;
     padding: 15px;
     border-radius: 10px;
+}
+@media (min-width: 768px) {
+    .swiper {
+        display: none !important;
+    }
+    .profit__conteiner {
+     display: flex;
+     flex-direction: column;
+        align-content: space-around;
+        align-items: center;
+
+    }
+    .profit-card {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        column-gap: 40px;
+        row-gap: 20px;
+        justify-content: center;
+    }
+    .profit-card-item {
+        margin: 0;
+        flex-basis: auto;
+        max-width: 370px;
+        box-shadow: 0 0 30px rgba(0, 0, 0, 0.15);
+    width: 80%;
+    padding: 15px;
+    border-radius: 10px;
+    }
+
+    .profit-card-item:nth-child(3),
+    .profit-card-item:nth-child(4),
+    .profit-card-item:nth-child(5),
+    .profit-card-item:nth-child(6) {
+        display: none;
+    }
+    .see-more {
+        font-size: 20px;
+        color: rgb(107, 90, 249);
+        width: auto;
+        left: 50%;
+        bottom: -37%;
+        font-weight: 900;
+        padding: 0 auto;
+    }
+}
+@media (min-width: 1280px) {
+    .profit-card-item:nth-child(3) {
+        display: block;
+    }
+    .profit__conteiner {
+        gap: 20px;
+    }
 }
 
 .profit__btn {
