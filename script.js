@@ -38,28 +38,36 @@ document.addEventListener('keydown', function (evt) {
           pagination: {
             el: '.swiper-pagination',
             clickable: true,
-            slidesPerView: 'auto',
+            sliderCardPerView: 'auto',
           } 
         });
        } else {
-        swiper.enable()
+        swiper.disable();
+        swiper = null;
        }
     }
 
-    window.addEventListener ('resize', function() {
+    window.addEventListener ('DOMContentLoaded', function() {
       if (window.matchMedia("(max-width: 768px)").matches) {
         sliderStart()
       } else {
         swiper.disable();
-        
+        swiper = null;
       }
     })
 
     let seeMore = document.querySelector('.see-more');
     let sliderCard = document.querySelectorAll('.profit-card-item')
 
-    seeMore.addEventListener('click', function() {
-      if (sliderCard.style.display = "none") {
-        sliderCard.style.display = "block"
+  seeMore.addEventListener('click', function() {
+    if (window.matchMedia("(max-width: 1280px)").matches) {
+      for (let i = 2; i < sliderCard.length; i++) {
+        sliderCard[i].classList.toggle('display--block', true)
       }
+    } else {
+      for (let i = 3; i < sliderCard.length; i++) {
+        sliderCard[i].classList.toggle('display--block', true)
+    }
+
+    }
   });
