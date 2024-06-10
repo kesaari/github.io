@@ -13,6 +13,8 @@ html {
         width: 100vw;
     }
 
+    
+
     a {
         text-decoration: none;
         color: rgb(42, 35, 103);
@@ -95,6 +97,9 @@ html {
                 height: 20px;
             }
             .display--none--mobile {
+                display: none;
+            }
+            .display--none--laptop {
                 display: none;
             }
         }
@@ -515,12 +520,6 @@ menu {
     border-radius: 10px;
     }
 
-    .profit-card-item:nth-child(3),
-    .profit-card-item:nth-child(4),
-    .profit-card-item:nth-child(5),
-    .profit-card-item:nth-child(6) {
-        display: none;
-    }
     .see-more {
         font-size: 20px;
         color: rgb(107, 90, 249);
@@ -532,11 +531,11 @@ menu {
     }
 }
 @media (min-width: 1280px) {
-    .profit-card-item:nth-child(3) {
-        display: block;
-    }
     .profit__conteiner {
         gap: 20px;
+    }
+    .profit-card-item:nth-child(3) {
+        display: static !important;
     }
 }
 
@@ -561,13 +560,24 @@ menu {
     font-size: 18px;
 }
 
+
 @media (min-width: 768px) {
     .use__container {
        display: flex;
        flex-direction: row;
        flex-wrap: wrap;
+       justify-content: space-between;
+       align-items: center;
     }
-
+    .flex-reverse {
+       display: flex;
+       flex-direction: row-reverse;
+       align-items: center;
+       justify-content: space-between;
+    }
+    .flex-reverse-img {
+        max-width: 539px;
+    }
 
 }
 

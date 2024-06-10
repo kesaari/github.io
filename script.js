@@ -57,17 +57,23 @@ document.addEventListener('keydown', function (evt) {
     })
 
     let seeMore = document.querySelector('.see-more');
-    let sliderCard = document.querySelectorAll('.profit-card-item')
+    let sliderCard = document.querySelectorAll('.profit-card-item');
+    let containerDesctop = document.querySelectorAll('.display--none--desctop');
+    let containerLaptop = document.querySelectorAll('.display--none--laptop')
+
+  // seeMore.addEventListener('click', function() {
+  //   if (window.matchMedia("(max-width: 1280px)").matches) {
+  //     for (let i = 2; i < sliderCard.length; i++) {
+  //       sliderCard[i].classList.toggle('display--block', true)
+  //     }
+  //   } else {
+  //     for (let i = 3; i < sliderCard.length; i++) {
+  //       sliderCard[i].classList.toggle('display--block', true)
+  //   }
+
+  //   }
+  // });
 
   seeMore.addEventListener('click', function() {
-    if (window.matchMedia("(max-width: 1280px)").matches) {
-      for (let i = 2; i < sliderCard.length; i++) {
-        sliderCard[i].classList.toggle('display--block', true)
-      }
-    } else {
-      for (let i = 3; i < sliderCard.length; i++) {
-        sliderCard[i].classList.toggle('display--block', true)
-    }
-
-    }
+    containerLaptop.classList.remove('display--none--laptop')  
   });
