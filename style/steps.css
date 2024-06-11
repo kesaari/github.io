@@ -4,6 +4,7 @@
     box-shadow: 0 10px 60px 0 rgba(42, 35, 103, 0.15);
     border-radius: 10px;
     padding-top: 1px;
+    min-height: 340px;
 
 }
 .steps:not(:first-child) {
@@ -45,7 +46,8 @@
 }
 .step__image {
     width: 80vw;
-    margin: 0 auto;
+    margin: 0 auto 50px;
+    
 }
 .step__image img {
     margin: 0 auto;
@@ -54,4 +56,11 @@
 .step__content {
     display: flex;
     flex-direction: column;
+}
+
+@media (min-width: 768px) {
+
+}
+@media (min-width: 1280px) {
+    
 }

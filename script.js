@@ -64,11 +64,11 @@ document.addEventListener('keydown', function (evt) {
   // seeMore.addEventListener('click', function() {
   //   if (window.matchMedia("(max-width: 1280px)").matches) {
   //     for (let i = 2; i < sliderCard.length; i++) {
-  //       sliderCard[i].classList.toggle('display--block', true)
+  //       sliderCard[i].classList.toggle('display--block')
   //     }
   //   } else {
   //     for (let i = 3; i < sliderCard.length; i++) {
-  //       sliderCard[i].classList.toggle('display--block', true)
+  //       sliderCard[i].classList.toggle('display--block')
   //   }
 
   //   }
