@@ -1,3 +1,44 @@
+
+let dialog = document.querySelector("dialog");
+let modalOverlay = document.querySelector('.modal__overlay')
+let modalClose = document.querySelector('.modal__close')
+
+let btnArray = document.querySelectorAll('[type="button"]');
+btnArray.forEach(function(btn) {
+    btn.addEventListener('click', function() {
+      dialog.show();
+      modalOverlay.style.display = "block";
+    });
+});
+
+modalClose.addEventListener('click', function() {
+    dialog.close();
+    modalOverlay.style.display = "none";
+})
+
+modalOverlay.addEventListener('click', function() {
+  dialog.close();
+  modalOverlay.style.display = "none";
+})
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 let menuBtn = document.querySelector('.navigation__menu');
 let submenu = document.querySelector('menu');
 let closeBtn = document.querySelector('.close')
@@ -14,6 +55,13 @@ menuBtn.addEventListener('click', function() {
 }
 });
 
+submenu.addEventListener("click",function(e) {
+  if((e.target) && (e.target.nodeName == "LI" || e.target.nodeName == "A")) {
+    submenu.style.display = "none";
+    menuShow = false;
+  }
+});
+
 closeBtn.addEventListener('click', function() {
     submenu.style.display = "none";
     menuShow = false;
@@ -28,6 +76,8 @@ document.addEventListener('keydown', function (evt) {
     if (evt.keyCode === 27) {
         submenu.style.display = "none";
         menuShow = false;
+        dialog.close();
+        modalOverlay.style.display = "none";
     }});
 
     let swiper = null;

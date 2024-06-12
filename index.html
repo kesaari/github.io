@@ -11,18 +11,18 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
-
+    <div class="modal__overlay"></div>
     <header>
 
             <ul class="navigation">
                 <li class="display--none--desktop"><button class="navigation__menu" type="menu"></button></a></li>               
                 <li class="navigation__logo"><a href="#"><img class="navigation__logo--image" src="./Pictures/logo.svg" alt="Логотип"></a></li>
-                <li><button class="navigation__btn" type="phone"></button></li>
+                <li><button class="navigation__btn" type="button"></button></li>
 
                 <div class="navigation__link__container"><li class="navigation__link"><a href="#">Главная</a></li>
                 <li class="navigation__link "><a href="#">Цены</a></li>
                 <li class="navigation__link "><a href="#">Кейсы и отзывы</a></li>
-                <li class="navigation__link "><a href="#">Контакты</a></li></div>
+                <li class="navigation__link "><a href="#footer">Контакты</a></li></div>
 
                 <div class="navigation__social__container"><li class="navigation__social"><a href="#"><img src="./Pictures/telegram (3) 1.svg" alt="Telegram"></a></li>
                 <li class="navigation__social "><a href="#"><img src="./Pictures/whatsapp (1) 1.svg" alt="Whatsapp"></a></li></div>
@@ -30,7 +30,7 @@
                 <div class="navigation__info"><div class="navigation__info__number">+ 7 (495) 555 65 65</div>
                 <div class="navigation__info__time">Ежедневно с 09:00 до 18:00</div></div>
 
-                <li class="display--none--mobile"><button type="submit" class="navigation__btn__phone">Заказать звонок</button></li>
+                <li class="display--none--mobile"><button type="button" class="navigation__btn__phone">Заказать звонок</button></li>
                 </ul>
 
         </header>
@@ -39,11 +39,11 @@
         <menu><div class="overlay"></div><div class="submenu">
             <div class="submenu__link__cont"><li class="submenu__link"><a href="#">Главная</a></li>
             <li class="submenu__link"><a href="#" style="padding: 0;">Интернет-магазины, которые продают</a></li>
-            <li class="submenu__link"><a href="#">Что вы получаете</a></li>
-            <li class="submenu__link"><a href="#">Контакты</a></li>
-            <li class="submenu__link"><a href="#">Исследуем бизнес</a></li>
-            <li class="submenu__link"><a href="#">Этапы</a></li>
-            <li class="submenu__link"><a href="#">Обратная связь</a></li></div>
+            <li class="submenu__link"><a href="#use">Что вы получаете</a></li>
+            <li class="submenu__link"><a href="#footer">Контакты</a></li>
+            <li class="submenu__link"><a href="#business">Исследуем бизнес</a></li>
+            <li class="submenu__link"><a href="#steps">Этапы</a></li>
+            <li class="submenu__link"><a href="#form">Обратная связь</a></li></div>
         
             <div class="submenu__info__cont"><li class="submenu__info">info@millenium.ru</li>
             <li class="submenu__info">+7 (495) 792-66-69</li>
@@ -52,21 +52,25 @@
         </div></div>
         <div class="close">+</div>
         </menu>
-        <!--<dialog class="modal" close>
-            <form name="forma" action="" autocomplete="on">
+        <dialog class="modal" close>
+            <form name="forma" action="" autocomplete="on" class="modal__form">
                 <p class="modal__title">Заявка на консультацию</p>
-                <label class="modal__ladel">
+                <label class="modal__label">
                     Ваше имя
-                    <input type="text" name="name" required value="Введите ваше имя">
+                    <input class="modal__input" type="text" name="name" placeholder="Введите ваше имя">
                   </label>
-                  <label class="modal__ladel">
+                  <label class="modal__label">
                     Номер телефона
-                    <input type="phone" name="phone" required value="+ 7 (999) 999 99 99">
+                    <input class="modal__input" type="phone" name="phone" placeholder="+ 7 (999) 999 99 99">
                   </label>
                   <button type="submit" class="modal__send">Отправить</button>
-                  <p class="modal__description">Нажимая на кнопку «Отправить заявку», я даю согласие на обработку персональных данных и соглашаюсь c политикой конфиденциальности</p>
+                  <div class="modal__description">
+                    <p>Нажимая на кнопку «Отправить заявку», я даю согласие на обработку персональных данных и соглашаюсь c политикой конфиденциальности</p>
+                    <img class="modal__img" src="Pictures\modal-img.svg"></div>
             </form>
-        </dialog>  -->      
+            <div class="modal__close"><img src="Pictures\modal-close.svg"></div>
+            
+        </dialog>       
         
     
 
@@ -82,7 +86,7 @@
                 и продуманной структурой который <b class="important">выделит вас на фоне конкурентов</b></p>
 
         <div class="oferta">
-            <button type="submit" class="oferta__btn">Узнать стоимость</button>
+            <button type="button" class="oferta__btn">Узнать стоимость</button>
             <p class="oferta__text"><span class="important">Оставьте заявку и получите бесплатную консультацию от специалиста, полный расчет стоимости разработки и бонус:</span> 
                 «15 сервисов которые покажут стратегию продвижения конкурентов, всё об их выдаче в поиске и не только»</p></div></div></div>
             </section>
@@ -156,11 +160,11 @@
     
 </div>
 <div class="swiper-pagination"></div></div>
-<button type="submit" class="profit__btn">Узнать стоимость</button>
+<button type="button" class="profit__btn">Узнать стоимость</button>
         </section>
 
 
-        <section>
+        <section><a name="use"></a>
             <h3 class="main__title">Что вы <span class="important">получаете?</span></h3>
             <div class="use__container">
 
@@ -204,7 +208,7 @@
             </div>
         </section>
 
-        <section>
+        <section><a name="business"></a>
             <h4 class="main__title">Исследуем <span class="important">бизнес</span></h4>
             <div class="business__container">
             <div class="business__content">
@@ -217,7 +221,7 @@
             </div></div>
         </section>
 
-        <section>
+        <section><a name="steps"></a>
             <h5 class="title">Этапы</h5>
              
             <div class="steps">
@@ -296,7 +300,7 @@
         
         </section>
         
-        <section>
+        <section><a name="form"></a>
             <div class="section__background">
                 <div class="section__container__text">
                     <div class="section__title">Компания Millenium-</div>
@@ -316,10 +320,10 @@
                     
                         <input class="form__input" placeholder="+ 7 (999) 999 99 99">
                         
-                        <button class="form__btn" type="submit">Перезвоните мне</button>
+                        <button class="form__btn" type="button">Перезвоните мне</button>
                         <div class="form__checkbox">
                         <input type="checkbox">
-                        <label>Cогласен/а на обработку персональных данных</label>
+                        <label class="form__label">Cогласен/а на обработку персональных данных</label>
                         </div>
                 </form>
             </div>
@@ -328,14 +332,14 @@
 
         </main>
 
-        <footer>
+        <footer><a name="footer"></a>
             <div class="footer__container">
                 
                 <div class="footer__action">
                     <li>Напишите нам</li>
                     <li><span class="important">info@millenium.ru</li>
                 </div>
-                <button type="submit" class="footer__btn">Узнать стоимость</button>
+                <button type="button" class="footer__btn">Узнать стоимость</button>
             
                 <div class="footer__messanger">
                     <img src="Pictures\footer-tg.png"><img src="Pictures\footer-wa.png">
@@ -352,7 +356,8 @@
             </div>
         
         </footer>
-
+    
         <script src="script.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
 </body>
