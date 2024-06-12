@@ -22,23 +22,6 @@ modalOverlay.addEventListener('click', function() {
 })
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 let menuBtn = document.querySelector('.navigation__menu');
 let submenu = document.querySelector('menu');
 let closeBtn = document.querySelector('.close')
@@ -107,23 +90,42 @@ document.addEventListener('keydown', function (evt) {
     })
 
     let seeMore = document.querySelector('.see-more');
-    let sliderCard = document.querySelectorAll('.profit-card-item');
-    let containerDesctop = document.querySelectorAll('.display--none--desctop');
-    let containerLaptop = document.querySelectorAll('.display--none--laptop')
+    let sliderCardArray = document.querySelectorAll('.profit-card-item');
+    let cardShow = false;
 
-  // seeMore.addEventListener('click', function() {
-  //   if (window.matchMedia("(max-width: 1280px)").matches) {
-  //     for (let i = 2; i < sliderCard.length; i++) {
-  //       sliderCard[i].classList.toggle('display--block')
-  //     }
-  //   } else {
-  //     for (let i = 3; i < sliderCard.length; i++) {
-  //       sliderCard[i].classList.toggle('display--block')
-  //   }
+  //   sliderCardArray.forEach(function(item) {
+  //     seeMore.addEventListener('click', function() {
+  //       if (item.style.display == "none") {
+  //       item.style.display = "block";
+        
+  //       } else {
+  //       item.style.display = "none";
 
-  //   }
+  //       }
+  //     });
   // });
+    
 
   seeMore.addEventListener('click', function() {
-    containerLaptop.classList.remove('display--none--laptop')  
+    if (window.matchMedia("(max-width: 1280px)").matches) {
+      for (let i = 2; i < sliderCardArray.length; i++) {
+        if (sliderCardArray[i].style.display == "none") {
+        sliderCardArray[i].style.display = "block";
+        seeMore.classList.add('see-more--rotate');
+        } else {
+          sliderCardArray[i].style.display = "none";
+          seeMore.classList.remove('see-more--rotate');
+        }}
+    } else {
+      for (let i = 3; i < sliderCardArray.length; i++) {
+        if (sliderCardArray[i].style.display == "none") {
+          sliderCardArray[i].style.display = "block";
+          seeMore.classList.add('see-more--rotate');
+          } else {
+            sliderCardArray[i].style.display = "none";
+            seeMore.classList.remove('see-more--rotate');
+          }
+    }
+
+    }
   });

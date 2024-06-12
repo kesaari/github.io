@@ -129,4 +129,7 @@ input[type="checkbox"] {
         margin: 0;
         width: 472px;
     }
+    .section {
+        height: 1140px;
+    }
 }
