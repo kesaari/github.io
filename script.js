@@ -26,15 +26,18 @@ let menuBtn = document.querySelector('.navigation__menu');
 let submenu = document.querySelector('menu');
 let closeBtn = document.querySelector('.close')
 let overlay = document.querySelector('.overlay')
+let elMenu = document.querySelector('.navigation__menu-3')
 let menuShow = false;
 
 menuBtn.addEventListener('click', function() {
   if (menuShow == false) { 
     submenu.style.display = "block";
     menuShow = true;
+    elMenu.classList.add('navigation__menu-3-active');
 } else {
   submenu.style.display = "none";
   menuShow = false;
+  elMenu.classList.remove('navigation__menu-3-active');
 }
 });
 
@@ -42,16 +45,19 @@ submenu.addEventListener("click",function(e) {
   if((e.target) && (e.target.nodeName == "LI" || e.target.nodeName == "A")) {
     submenu.style.display = "none";
     menuShow = false;
+    elMenu.classList.remove('navigation__menu-3-active');
   }
 });
 
 closeBtn.addEventListener('click', function() {
     submenu.style.display = "none";
     menuShow = false;
+    elMenu.classList.remove('navigation__menu-3-active');
 });
 overlay.addEventListener('click', function() {
   submenu.style.display = "none";
   menuShow = false;
+  elMenu.classList.remove('navigation__menu-3-active');
 });
 
 
@@ -61,6 +67,7 @@ document.addEventListener('keydown', function (evt) {
         menuShow = false;
         dialog.close();
         modalOverlay.style.display = "none";
+        elMenu.classList.remove('navigation__menu-3-active');
     }});
 
     let upSwiper = null;

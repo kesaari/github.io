@@ -9,6 +9,7 @@
     border-radius: 10px;
     border: 0;
     position: fixed;
+    margin: 10px;
 }
 .modal__form {
     display: flex;
@@ -30,6 +31,7 @@
     border: 0;
     border-bottom: 2px solid rgb(152, 149, 180);
     height: 40px;
+    
 }
 .modal__input::placeholder {
     color: rgb(152, 149, 180);
@@ -37,9 +39,11 @@
     font-weight: 700;
     padding-bottom: 10px;
     }
-.modal__input:focus {
-    border: 2px solid rgb(152, 149, 180);
+.modal__input:focus-visible {
+    
+    outline: none;
 }
+
 .modal__title {
     color: rgb(42, 35, 103);
     font-size: 18px;
@@ -51,6 +55,7 @@
     color: white;
     height: 60px;
     border: 0;
+    border-radius: 10px;
 }
 .modal__description {
     color: rgb(152, 149, 180);
@@ -63,6 +68,8 @@
 }
 .modal__img {
     max-width: 213px;
+    width: 70%;
+    padding-bottom: 10px;
 }
 .modal__close{
     position: absolute;

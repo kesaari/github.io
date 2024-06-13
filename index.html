@@ -16,13 +16,17 @@
     <header>
 
             <ul class="navigation">
-                <li class="display--none--desktop"><button class="navigation__menu" type="menu"></button></a></li>               
+                <li class="display--none--desktop"><div class="navigation__menu" type="menu">
+                    <div class="navigation__menu-1"></div>
+                    <div class="navigation__menu-2"></div>
+                    <div class="navigation__menu-3"></div>
+                </div></li>               
                 <li class="navigation__logo"><a href="#"><img class="navigation__logo--image" src="./Pictures/logo.svg" alt="Логотип"></a></li>
                 <li><button class="navigation__btn" type="button"></button></li>
 
-                <div class="navigation__link__container"><li class="navigation__link"><a href="#">Главная</a></li>
-                <li class="navigation__link "><a href="#">Цены</a></li>
-                <li class="navigation__link "><a href="#">Кейсы и отзывы</a></li>
+                <div class="navigation__link__container"><li class="navigation__link"><a href="#main">Главная</a></li>
+                <li class="navigation__link "><a href="#form">Цены</a></li>
+                <li class="navigation__link "><a href="#steps">Кейсы и отзывы</a></li>
                 <li class="navigation__link "><a href="#footer">Контакты</a></li></div>
 
                 <div class="navigation__social__container"><li class="navigation__social"><a href="#"><img src="./Pictures/telegram (3) 1.svg" alt="Telegram"></a></li>
@@ -39,7 +43,7 @@
     
         <menu><div class="overlay"></div><div class="submenu">
             <div class="submenu__link__cont"><li class="submenu__link"><a href="#">Главная</a></li>
-            <li class="submenu__link"><a href="#" style="padding: 0;">Интернет-магазины, которые продают</a></li>
+            <li class="submenu__link"><a href="#main" style="padding: 0;">Интернет-магазины, которые продают</a></li>
             <li class="submenu__link"><a href="#use">Что вы получаете</a></li>
             <li class="submenu__link"><a href="#footer">Контакты</a></li>
             <li class="submenu__link"><a href="#business">Исследуем бизнес</a></li>
@@ -76,7 +80,7 @@
     
 
         <main>
-            <section>
+            <section><a name="main"></a>
             <h1 class="h__title">Разработка интернет-магазинов <span class="important">на 1C-Битрикс</span></h1>
             <div class="main">
                 <div class="main__picture"><img class="main__picture--image" src="./Pictures/comp.png" alt="Фоновое изображение"></div>
@@ -169,8 +173,8 @@
             <h3 class="h__title">Что вы <span class="important">получаете?</span></h3>
             <div class="use__container">
 
-                <img src="Pictures\Group_22 1.png">
-                <ul class="use__ul">
+                <img class="use__img use__img-1" src="Pictures\Group_22 1.png">
+                <ul class="use__ul use__ul-1">
                     <li>Каталог товаров</li>
                     <li>возможность выгружать свои товары в неограниченном количестве</li>
                     <li>добавлять и редактировать описание товаров</li>
@@ -178,33 +182,33 @@
                     <li>сортировать товары по заданным критериям</li>
                 </ul>
 
-                <div class="flex-reverse">
-                    <div class="flex-reverse-img"><img src="Pictures\23 1.png"></div>
-                <ul class="use__ul">
+                
+                    <img class="use__img use__img-2" src="Pictures\23 1.png">
+                <ul class="use__ul use__ul-2">
                     <li>Оформление заказа</li>
                     <li>личный кабинет</li>
                     <li>корзина с отображением выбранных товаров</li>
                     <li>оформление заказа с указанием контактных данных</li>
                     <li>возможность приема онлайн-платежей</li>
                     <li>использование купонов, скидок и специальных предложений</li>
-                </ul></div>
+                </ul>
 
-                <img src="Pictures\24 1.png">
-                <ul class="use__ul">
+                <img class="use__img use__img-3" src="Pictures\24 1.png">
+                <ul class="use__ul use__ul-3">
                     <li>Интеграции</li>
                     <li>1С, Мой склад (выгрузка товаров на сайт, полная синхронизация)</li>
                     <li>Маркетплейсы (Яндекс.Маркет, Wildberries, Goods, Ozon)</li>
                     <li>Интеграция со службами доставки СДЭК, Почта России</li>
                 </ul>
 
-                <div class="flex-reverse">
-                    <div class="flex-reverse-img"><img src="Pictures\25 1.png"></div>
-                <ul class="use__ul">
+                
+                    <img class="use__img use__img-4" src="Pictures\25 1.png">
+                <ul class="use__ul use__ul-4">
                     <li>CRM</li>
                     <li>фиксация и отслеживание поступивших заявок</li>
                     <li>уведомления о заказах</li>
                     <li>отчетность магазина</li>
-                </ul></div>
+                </ul>
 
             </div>
         </section>
@@ -352,7 +356,7 @@
                     
                         <input class="form__input" placeholder="+ 7 (999) 999 99 99">
                         
-                        <button class="form__btn" type="button">Перезвоните мне</button>
+                        <button class="form__btn" type="submit">Перезвоните мне</button>
                         <div class="form__checkbox">
                         <input type="checkbox">
                         <label class="form__label">Cогласен/а на обработку персональных данных</label>
@@ -371,8 +375,9 @@
                     <li>Напишите нам</li>
                     <li><span class="important">info@millenium.ru</li>
                 </div>
-                <button type="button" class="footer__btn">Узнать стоимость</button>
-            
+                <div class="footer__line"></div>
+                <button type="button" class="footer__btn">Заказать звонок</button>
+                
                 <div class="footer__messanger">
                     <img src="Pictures\footer-tg.png"><img src="Pictures\footer-wa.png">
                 </div>
