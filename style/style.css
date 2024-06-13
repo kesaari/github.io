@@ -78,13 +78,13 @@ html {
         .navigation__menu {
             width: 41px;
             height: 20px;
-            background-image: url(../Pictures/menu.svg);
+            background-image: url('../Pictures/menu.svg');
             border: none;
             background-color: white;
 
 		}
         .navigation__btn {
-            background-image: url(../Pictures/Vector.svg);
+            background-image: url('../Pictures/Vector.svg');
             background-repeat: no-repeat;
             background-position: center;
             width: 52px;
@@ -653,7 +653,7 @@ menu {
     max-width: 100%;
     overflow: hidden;
     height: 250px;
-    background-image: url(../Pictures/office.png);
+    background-image: url('../Pictures/office.png');
     background-repeat: no-repeat;
     background-position: 60% 30%;
 }
