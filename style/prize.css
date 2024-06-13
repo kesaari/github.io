@@ -1,0 +1,42 @@
+.prize {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(240, 213, 119);
+    width: 90%;
+    height: 90%;
+    border-radius: 10px;
+    border: 1px solid white;
+}
+.prize__section {
+    background-color: rgb(240, 213, 119);
+}
+.prize__gold {
+    max-width: 99px;
+}
+.prize__card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    
+}
+.prize__const {
+   font-size: 12px;
+   font-weight: 700;
+   color: rgb(159, 159, 159);
+}
+.prize__text {
+   font-size: 12px;
+   font-weight: 700;
+   color: rgb(42, 35, 103);
+}
+.swiper-2 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+}
+.swiper__wrapper {
+    width: 100%;
+}
