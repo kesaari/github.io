@@ -70,7 +70,7 @@ html {
         .navigation__link__container {
             display: none;
         }
-        .display--none--mobile {
+        .navigation__display--none--mobile {
             display: none;
         }
         
@@ -135,7 +135,7 @@ html {
                 height: 55px;
                 
             }
-            .navigation__logo--image {
+            .navigation__logo__image {
                 width: 177.61px;
                 height: 55px;
             }
@@ -186,14 +186,14 @@ html {
             .display--none--desktop {
                 display: none;
             }
-            .display--none--mobile {
+            .navigation__display--none--mobile {
                 display: block;
             }
             .navigation__logo {
                 width: 182px;
                 height: 55px;
             }
-            .navigation__logo--image {
+            .navigation__logo__image {
                 width: 182px;
                 height: 55px;
             }
@@ -363,7 +363,7 @@ html {
         }
     }
 
-    .important {
+    .light {
         color: rgb(107, 90, 249);
     }
     /* button:hover {
@@ -608,7 +608,7 @@ menu {
         margin-top: 50px;
 }
 
-.use__ul li:first-child {
+.potential__ul li:first-child {
     list-style-type: none;
     color: rgb(107, 90, 249);
     font-weight: 700;
@@ -616,11 +616,11 @@ menu {
     padding-bottom: 10px;
     font-size: 18px;
 }
-.use__container img {
+.potential__container img {
     width: 100%;
     max-width: 368px;
 }
-.use__btn {
+.potential__btn {
     display: block;
         background-color: rgb(107, 90, 249);
         width: 275px;
@@ -656,22 +656,22 @@ menu {
         max-width: 370px;
     
     } */
-     .use__container {
+     .potential__container {
         display: grid;
         grid-template-columns: 50% 50%;
         align-items: center;
         justify-items: center;
      }
-    .use__img-2 {
+    .potential__img-2 {
         grid-column: 2;
     }
-    .use__ul-2 {
+    .potential__ul-2 {
         grid-row: 2;
     }
-    .use__img-4 {
+    .potential__img-4 {
         grid-column: 2;
     }
-    .use__ul-4 {
+    .potential__ul-4 {
         grid-row: 4;
     }
 
