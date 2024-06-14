@@ -61,6 +61,26 @@
     z-index: 1 !important;
 }
 
-@media (min-width:768px) {
-    
+@media (min-width:1280px) {
+    .prize {
+        flex-direction: row;
+
+    }
+    .prize__card {
+        width: 231px;
+    }
+    .swiper-slide {
+        width: 231px !important;
+    }
+    .swiper-2 .swiper-wrapper {
+        width: 100%;
+        justify-content: center !important;
+        gap: 95px !important;
+
+    }
+    .prize__gold {
+        width: 100%;
+        margin-left: 15px;
+        transform: translateY(11px);
+    }
 }

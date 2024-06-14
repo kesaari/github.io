@@ -620,7 +620,17 @@ menu {
     width: 100%;
     max-width: 368px;
 }
+.use__btn {
+    display: block;
+        background-color: rgb(107, 90, 249);
+        width: 275px;
+        height: 60px;
+        color: aliceblue;
+        border: 0px;
+        border-radius: 5px;
+        margin: 40px auto 40px auto;
 
+}
 
 @media (min-width: 768px) {
     /* .use__container {
