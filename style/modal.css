@@ -73,7 +73,7 @@
 }
 .modal__close{
     position: absolute;
-    bottom: 96%;
+    bottom: 95%;
     left: 95%;
 }
 .modal__overlay {
@@ -97,7 +97,7 @@
         max-width: 760px;
     }
     .modal__close {
-        bottom: 96%;
+        bottom: 95%;
         left: 97%; 
     }
 }
