@@ -8,7 +8,7 @@
     width: 100%;
     position: relative;
 }
-.section__container__text {
+.section__container-text {
     display: flex;
     flex-direction: column;
     align-items: center;
